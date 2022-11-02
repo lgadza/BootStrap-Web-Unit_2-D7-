@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      /* .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+      } */
+      .img {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        border-radius: 2%;
+        box-shadow: 0 0 5px 6px gray;
+        position: relative;
+      }
+      .card-info {
+        position: absolute;
+        width: 100%;
+        bottom: 5vh;
+        left: 25px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+      }
+      .title {
+        font-size: 1.6em;
+        font-weight: bold;
+        margin: 50px 0;
+      }
+      .artist {
+        font-family: "Pacifico", cursive;
+        font-size: 1.2em;
+      }
+      .genre {
+        font-style: italic;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 1.3em;
+        color: red;
+      }
+      .duration {
+        font-size: 14px;
+        font-style: oblique;
+      }
+      .card-mgn {
+        margin: 10px 0;
+      }
+      #favourite h3 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      #worst h3 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      #gallery h3 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      /* .remove-space{
+        margin: 0 !important
+
+      }
+      .space-remove{
+        margin: 0 !important
+
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          ><iconify-icon
+            icon="akar-icons:music"
+            width="30px"
+            style="color: red"
+          ></iconify-icon
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#favourite"
+                >Favourite <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#worst">Worst</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                My List
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Gospel</a>
+                <a class="dropdown-item" href="#">R&B</a>
+                <a class="dropdown-item" href="#">House</a>
+                <a class="dropdown-item" href="#">Classic</a>
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div class="favourite">
+        <div id="favourite"><h3>Favourite</h3></div>
+        <div class="container">
+          <div class="row">
+            <div class="card-mgn col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+            <div class="card-mgn col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+            <div
+              class="card-mgn col-12 col-md-6 col-md-4 col-lg-5 col-xl-3 col-lg-4 col-xs-4"
+            >
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+            <div class="card-mgn col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+            <div class="card-mgn col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review">
+        <!-- Review section -->
+      </div>
+      <div class="favourite">
+        <div id="worst"><h3>Worst</h3></div>
+        <div class="container">
+          <div class="row">
+            <div class="card-mgn col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+            <div
+              class="card-mgn col-12 col-md-6 col-md-4 col-lg-5 col-xl-3 col-lg-4 col-xs-4"
+            >
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+            <div class="card-mgn col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+            <div class="card-mgn col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="img" src="/night.jpg" alt="Naomi" />
+              <div class="card-info">
+                <div class="title">OH HOLY NIGHT</div>
+                <div class="artist">Naomi Raine</div>
+                <div class="genre">Gospel</div>
+                <div class="duration">5min 30sec</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div id="gallery"><h3>Gallery</h3></div>
+        <div class="row space-remove">
+            <div class=" remove-space col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="figure-img img-fluid rounded" src="/naomi.jpeg" alt="Naomi" />
+            </div>
+            <div class="remove-space col-12 col-md-6 col-lg-5 col-xl-3">
+              <img class="figure-img img-fluid rounded" src="/naomi.jpeg" alt="Naomi" />
+            </div>
+        </div>
+     </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</html>
