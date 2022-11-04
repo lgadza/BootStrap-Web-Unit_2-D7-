@@ -443,7 +443,7 @@
           </div>
         </div>
       </div>
-<div class="review">
+<div class="review1">
         <div id="review"><h3>Review</h3></div>
         <div class="card mb-3">
   <img src="naomi.jpeg" class="card-img-top img-fluid col-lg-6" alt="Wild Landscape"/>
@@ -471,15 +471,17 @@
 </div>
   </div>
 </div>
+</div>
 <!-- table -->
 <div id="d-w"><h2 id="d-w" class="mb-5" >Album</h2></div>
-<table class="table">
+<table class="table table2">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Track Number</th>
       <th scope="col">Track title</th>
       <th scope="col">Duration</th>
       <th scope="col">Album</th>
+      <th scope="col" class="delete">delete</th>
     </tr>
   </thead>
   <tbody>
@@ -487,24 +489,59 @@
       <th scope="row">1</th>
       <td>Mark</td>
       <td>1 min 30 sec</td>
-      <td>@mdo</td>
+      <td>Oh Load</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>3 min 14 sec</td>
-      <td>@fat</td>
+      <td>Oh Load</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Larry</td>
       <td>the Bird</td>
-      <td>@twitter</td>
+      <td>Oh Load</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>Oh Load</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>Oh Load</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>Oh Load</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>Oh Load</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
     </tr>
   </tbody>
 </table>
-
-<table class="table">
+<div>
+<button type="button" id="add-track" class="btn btn-outline-success">Add Track</button>
+</div>
+<table class="table table1">
   <thead class="thead-light">
     <tr>
       <th scope="col">Track Number</th>
@@ -520,18 +557,24 @@
       <td>Mark</td>
       <td>1 min 30 sec</td>
       <td>@mdo</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>3 min 14 sec</td>
       <td>@fat</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Larry</td>
       <td>the Bird</td>
       <td>@twitter</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
     </tr>
   </tbody>
 </table>
@@ -758,4 +801,14 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  <script>
+    let btnDelete=document.querySelector(".delete")
+    let track=document.querySelectorAll(".table2 tbody tr")
+    console.log(track)
+    btnDelete.addEventListener("click",()=>{
+      for(let i=0;i<track.length;i++){
+        track[i].remove()
+      }
+    })
+  </script>
 </html>

@@ -241,9 +241,15 @@ h2 {
   margin-left: 50%;
   /* display: block; */
 }
+#add-track:hover {
+  box-shadow: 0 8px 5px 0px green;
+}
 #footerte {
   bottom: 0;
   z-index: 4;
+}
+.delete {
+  color: red;
 }
 /* THIS IS RESPOSIVENESS */
 @media screen and (max-width: 830px) {
