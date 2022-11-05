@@ -29,8 +29,8 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid px-0 ">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"
           ><iconify-icon
             icon="akar-icons:music"
@@ -53,12 +53,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#favourite"
+              <a class="nav-link" href="#d-w"
                 >Favourite <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#worst">Worst</a>
+              <a class="nav-link" href="#most">Most Played</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -739,7 +739,7 @@
       </div> -->
       
       <!-- Favourate Artist -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="most" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators ind">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -747,7 +747,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="container">
+      <div  class="container">
         <div id="gallery mt-5"><h3>Most played</h3></div>
         <div class="row">
           <div class="card  col-12 col-md-6 col-lg-4 col-xl-3 top-played mt-2">
@@ -923,56 +923,57 @@
 </div>
       <!-- Favourate Artist -->
 
-      <div class="gallery my-5">
-        <div id="gallery"><h3>Gallery</h3></div>
+      <div class="container gallery my-5">
+                  <div id="gallery"><h3>Gallery</h3></div>
+                  <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src="night.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+
+              <img
+                src="R.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Wintry Mountain Landscape"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="naomi.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Mountains in the Clouds"
+              />
+
+              <img
+                src="R.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="/R.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+              />
+
+              <img
+                src="naomi.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Yosemite National Park"
+              />
+            </div>
+          </div>
 
       </div>
 
        <!-- Gallery -->
-<div class="row">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-    <img
-      src="night.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
 
-    <img
-      src="R.jpeg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="naomi.jpeg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
-
-    <img
-      src="R.jpeg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="/R.jpeg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
-
-    <img
-      src="naomi.jpeg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
-  </div>
-</div>
-<footer id="footerte container-fluid" class="text-center text-white" style="background-color: #f1f1f1;">
+<footer id="footer" class="text-center text-white" style="background-color: #f1f1f1;">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Section: Social media -->

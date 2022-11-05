@@ -6,6 +6,17 @@ let pauseTrack = document.querySelectorAll(".pause-track");
 let playTack = document.querySelectorAll(".tr2");
 let background = document.querySelectorAll(".play2");
 console.log(playTack);
+let seeAll = document.querySelector(".btn-see-more");
+let seeMore = document.querySelector(".see-more");
+let displayTrack = document.querySelectorAll(".card-mgn.d-none");
+seeAll.addEventListener("click", () => {
+  seeAll.classList.add("d-none");
+  seeMore.classList.add("d-none");
+  for (let i = 0; displayTrack.length; i++) {
+    displayTrack[i].classList.remove("d-none");
+  }
+});
+
 for (let i = 0; i < pauseTrack.length; i++) {
   pauseTrack[i].addEventListener("click", () => {
     pauseTrack[i].style.display = "none";
@@ -33,14 +44,3 @@ for (let i = 0; i < track.length; i++) {
     bin.push(track[i]);
   });
 }
-
-let seeAll = document.querySelector(".btn-see-more");
-let seeMore = document.querySelector(".see-more");
-let displayTrack = document.querySelectorAll(".card-mgn.d-none");
-seeAll.addEventListener("click", () => {
-  seeAll.classList.add("d-none");
-  seeMore.classList.add("d-none");
-  for (let i = 0; displayTrack.length; i++) {
-    displayTrack[i].classList.remove("d-none");
-  }
-});

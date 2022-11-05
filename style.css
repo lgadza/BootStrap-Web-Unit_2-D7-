@@ -35,7 +35,7 @@
   font-size: 1.6em;
   font-weight: bold;
   margin: 5px 0;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.5s 0.2s;
 }
 .title-1 {
@@ -48,7 +48,7 @@
 .artist {
   font-family: "Pacifico";
   font-size: 1.2em;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.5s 0.3s;
 }
 .artist-1 {
@@ -61,7 +61,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.3em;
   color: red;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.5s 0.4s;
 }
 .genre-1 {
@@ -74,7 +74,7 @@
 .duration {
   font-size: 14px;
   font-style: oblique;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.5s 0.5s;
 }
 .duration-1 {
@@ -102,13 +102,25 @@
   overflow: hidden;
   background-color: transparent;
 }
+.navbar-dark {
+  background-color: rgba(1, 1, 1, 0.9) !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 .card {
   border: none;
-  background-color: rgb(31, 29, 29);
+
+  background-color: rgb(31, 28, 29);
+
+  /* background-color: transparent; */
+
   border-radius: 10px;
 }
 .card-mgn:hover .card {
   background-color: rgb(42, 40, 40);
+  /* background-color: rgb(35, 33, 33); */
+
   transform: scale(1.02);
   border-radius: 10px;
 }
@@ -176,6 +188,9 @@
   height: 10px;
   border-radius: 50%;
 }
+/* .first-carousel {
+  margin-top: 10%;
+} */
 .ind {
   transform: translateY(25px);
 }
