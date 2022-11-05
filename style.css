@@ -151,10 +151,33 @@
 }
 .card-mgn:hover .play {
   opacity: 1;
+  transform: translateY(-5px);
+}
+.top-played:hover .play {
+  opacity: 1;
   transform: translateY(0px);
+}
+.img-fluid {
+  border-radius: 50%;
 }
 .album-play {
   position: relative;
+}
+.top-played {
+  background-color: transparent;
+  position: relative;
+}
+.top-played:hover {
+  /* background-color: ; */
+  background-color: rgb(42, 40, 40);
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.ind {
+  transform: translateY(25px);
 }
 .play {
   position: absolute;
